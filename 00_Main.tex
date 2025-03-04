@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% IBI LaTeX template
+%%   Hamed Mehranfar
+%%   Arnór Elvarsson
+%%   
+%%   mehranfar@ibi.baug.ethz.ch
+%%   elvarsson@ibi.baug.ethz.ch
+%%    
+%%   
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% This is an example for writing a project/thesis at the IBI.
+%% This template is built up on the Latex template of IVT.
+%% 
+%% 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%
+\documentclass[numbered]{ibi-style/standard}
+
+
+\AtBeginEnvironment{longtable}{\tiny}
+\RequirePackage[capitalize]{cleveref}
+\RequirePackage{booktabs}
+
+\providecommand{\ibihline}{}
+
+\title{Scan-to-BIM: Optimizing the Planning Process for Telecom Sites with Advanced 3D Modeling}
+%\subtitle{Do you really need a subtitle?}
+\papertype{Bachelor's Thesis}
+\headingstitle{Scan-to-BIM for Telecom Sites}
+\author{
+  Jeffrey Leisi\\
+  19-918-184\\
+  Circular Engineering for Architecture\\
+  ETH Zürich \\
+  \texttt{leisij@student.ethz.ch} \\
+%    \and
+%    Third Author \\
+%    IBI \\
+%    ETH Zurich
+%    \and
+%    Fourth Author \\
+%    IBI \\
+%    ETH Zurich
+}
+\supervisor{
+Supervisors:
+\and\\
+\and
+    Océane Durand Maniclas\\
+    CEA, ETH Zürich \\
+    \texttt{durand-maniclas@ibi.baug.ethz.ch}
+\and\\
+\and
+    Kasimir Forth\\
+    CEA, ETH Zürich \\
+    \texttt{forth@ibi.baug.ethz.ch} \\
+}
+
+\reportdate{15.06.2025}
+\reportdategerman{DateGer}
+\reportnumber{10XX}
+\titlefigure{figures/ETHTitlePage}
+% The year of the paper
+% The month of the paper, include only: jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec
+% The day of the paper - include day in number 1,..., 12,..., 31
+
+
+%%%% If you don't want to include an english abstract page, comment out this command
+\abstract{
+
+\blindtext[2] 
+
+}
+
+%%% To inclue a second abstract page with german headings and a german abstract, use the command below
+%\germanabstract{
+%    Dieses Bericht....
+%
+%}
+
+\keywords{BIM, Scan-to-BIM}
+
+%\suggestedCitation{
+%}
+\hypersetup{hidelinks}
+\begin{document}
+
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\clearpage
+\input{0-Abbreviations}
+\input{0-Acknowledgement}
+\newpage
+
+\input{01_Introduction}
+\input{02_LiteratureReview}
+\input{03_Methodology}
+\input{04_Problem-Description}
+\input{05_Results}
+\input{06_Discussion}
+\input{07_Conclusion}
+
+\printbibliography
+\input{08-Appendix.tex}
+
+\clearpage
+
+
+\end{document}
